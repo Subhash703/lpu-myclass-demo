@@ -9,8 +9,8 @@ https://lpu-myclass-demoapp.netlify.app/
 
 I'm adding more modules to it.
 
-![Image 1](https://github.com/Subhash703/lpu-myclass-demo/blob/master/img1.png)
+![Image 1](https://github.com/Subhash703/lpu-myclass-demo/blob/master/img/img1.png)
 
-![Image 2](https://github.com/Subhash703/lpu-myclass-demo/blob/master/img2.png)
+![Image 2](https://github.com/Subhash703/lpu-myclass-demo/blob/master/img/img3.png)
 
-![Image 3](https://github.com/Subhash703/lpu-myclass-demo/blob/master/img3.png)
+![Image 3](https://github.com/Subhash703/lpu-myclass-demo/blob/master/img/img2.png)
