@@ -18,7 +18,7 @@
                 <img src="./img/lpu_logo.png" alt="logo">
             </div>
             
-            <a href="#" class="home">
+            <a href="./landing.html" class="home">
                 <i class="fas fa-home"></i>
                 Home
             </a>
@@ -36,7 +36,7 @@
             </select>
             <a href="#">Support</a>
             <div class="log-out-btn" id="logout">
-                <a href="./login.html">
+                <a href="./index.html">
                     Logout 
                     <i class="fas fa-sign-out-alt"></i>
                 </a>
@@ -46,7 +46,7 @@
     <div class="navigation">
         <ul>
             <li id="home">
-                <a href="#">
+                <a href="./index.html">
                     <i class="fas fa-home"></i>
                     Home
                 </a>
@@ -60,7 +60,7 @@
             </li>
             <li id="usermail">
                 <select name="user" id="">
-                    <option value="useremail">
+                    <option class="usermail" value="useremail">
                         11803315.st@gmail.com
                     </option>
                 </select>
@@ -122,13 +122,17 @@
     </div>
     <footer class="userdetail"></footer>
     <script>
-        document.querySelector('.userdetail').innerText="Welcome  "+ localStorage.getItem('Username')+"@lpu.in"
+        document.querySelector('.userdetail').innerText="Welcome  "+ localStorage.getItem('Username')+"@lpu.in";
         console.log(localStorage.getItem('Username'));
-        
+        document.querySelector('.usermail').innerText = localStorage.getItem('Username')+".st@lpu.in";
         const navigation = document.querySelector('.navigation');
         const barButton = document.querySelector('.humburgar');
         barButton.addEventListener('click',()=>{
             navigation.classList.toggle('active');
+        });
+
+        document.querySelector('#logout').addEventListener('click',()=>{
+            localStorage.clear();
         });
     </script>
 </body>
