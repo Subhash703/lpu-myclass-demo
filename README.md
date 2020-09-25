@@ -1,5 +1,5 @@
 # lpu-myclass-demo
-
+#NOT A REAL APP : IT'S Just a clone , for learning purposes
 This app is a demo copy of lpu's myclass app. I have made it ony using HTML, CSS & Javascript. 
 
 #Here is the link 
