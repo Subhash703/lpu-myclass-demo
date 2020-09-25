@@ -120,9 +120,11 @@
             </div>
         </div>
     </div>
-
+    <footer class="userdetail"></footer>
     <script>
-
+        document.querySelector('.userdetail').innerText="Welcome  "+ localStorage.getItem('Username')+"@lpu.in"
+        console.log(localStorage.getItem('Username'));
+        
         const navigation = document.querySelector('.navigation');
         const barButton = document.querySelector('.humburgar');
         barButton.addEventListener('click',()=>{
