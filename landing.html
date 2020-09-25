@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codetantra : Teach & Learn anywhere...</title>
+    <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /> 
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <div class="humburgar">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="./img/lpu_logo.png" alt="logo">
+            </div>
+            
+            <a href="#" class="home">
+                <i class="fas fa-home"></i>
+                Home
+            </a>
+            <select class="learn" name="" id="">
+                <option value="Learn Anywhere">
+                    Learn Anywhere
+                </option>  
+            </select>
+        </div> 
+        <div class="right">
+            <select name="user" id="">
+                <option value="useremail">
+                    11803315.st@gmail.com
+                </option>
+            </select>
+            <a href="#">Support</a>
+            <div class="log-out-btn" id="logout">
+                <a href="./login.html">
+                    Logout 
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+        </div>       
+    </nav>
+    <div class="navigation">
+        <ul>
+            <li id="home">
+                <a href="#">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </li>
+            <li id="learn">
+                <select name="" id="">
+                    <option value="Learn Anywhere">
+                        Learn Anywhere
+                    </option>  
+                </select>
+            </li>
+            <li id="usermail">
+                <select name="user" id="">
+                    <option value="useremail">
+                        11803315.st@gmail.com
+                    </option>
+                </select>
+            </li>
+            <li>
+                <a href="#">Support</a>
+            </li>
+            <li>
+                <div class="log-out-btn" id="logout">
+                    <a href="./login.html">
+                        Logout 
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="home__grid_container">
+        <div class="card__outer">
+            <div class="card">
+                <img src="./img/undraw_group_video_without_border.svg" alt="">
+                <div class="card-body">
+                    <p>Click here to join or view all your live and recorded classes/meetings</p>
+                </div>
+                <div class="card-footer">
+                    View/classes / Meetings
+                </div>
+            </div>
+        </div>
+        <div class="card__outer">
+            <div class="card">
+                <img src="./img/undraw_dev_focus_b9xo.svg" alt="">
+                <div class="card-body">
+                    <p>Click here to all your courses/subjects</p>
+                </div>
+                <div class="card-footer">Courses</div>
+            </div>
+        </div>
+        <div class="card__outer">
+            <div class="card">
+                <img src="./img/undraw_exams_g4ow.svg" alt="">
+                <div class="card-body">
+                    <p>Click here to view all your scheduled and completed tests</p>
+                </div>
+                <div class="card-footer">Tests</div>
+            </div>
+        </div>
+        <div class="card__outer">
+            <div class="card">
+                <img src="./img/undraw_web_developer_p3e5.svg" alt="">
+                <div class="card-body">
+                    <p>Click here to view all your programming Labs</p>
+                </div>
+                <div class="card-footer">
+                    Programming Labs
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const navigation = document.querySelector('.navigation');
+        const barButton = document.querySelector('.humburgar');
+        barButton.addEventListener('click',()=>{
+            navigation.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
