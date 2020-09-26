@@ -6,8 +6,7 @@ const loginBtn = document.querySelector('.login__btn');
 const changeBtn = document.querySelector('.change-btn');
 
 const backgrounds = ['red','blue','cyan','green','yellow'];
-var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789';
-captchaText.innerText = characters.charAt(Math.floor(Math.random()*characters.length));
+
 
 window.onload = ()=>{
     let promise = Notification.requestPermission();
@@ -16,6 +15,7 @@ window.onload = ()=>{
 
 changeBtn.addEventListener('click',()=>{
     // captcha.
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789';
     let newCaptcha = '';
     for(let i = 0; i<6; i++){
         newCaptcha += characters.charAt(Math.floor(Math.random()*characters.length));
