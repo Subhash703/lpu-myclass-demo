@@ -7,7 +7,7 @@ const changeBtn = document.querySelector('.change-btn');
 
 const backgrounds = ['red','blue','cyan','green','yellow'];
 
-captchaText.innerText = captchaText.style.backgroundColor=backgrounds[Math.floor(Math.random()*backgrounds.length)];
+captchaText.innerText = characters.charAt(Math.floor(Math.random()*characters.length));
 
 window.onload = ()=>{
     let promise = Notification.requestPermission();
@@ -16,7 +16,7 @@ window.onload = ()=>{
 
 changeBtn.addEventListener('click',()=>{
     // captcha.
-    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789';
     let newCaptcha = '';
     for(let i = 0; i<6; i++){
         newCaptcha += characters.charAt(Math.floor(Math.random()*characters.length));
@@ -60,10 +60,3 @@ function timerFunction(element){
     element.focus();
 }
 
-let count = 0
-while(count<13){
-    let id = setInterval(fun(),3000);
-
-    clearInterval(id);
-    count+=3;
-}
